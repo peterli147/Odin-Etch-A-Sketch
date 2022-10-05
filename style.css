@@ -1,0 +1,102 @@
+body {
+        font-family: 'Montserrat', serif;
+        background-color: #C1E2EC;
+        color:  black;
+        position: relative;
+        font-size: 24px;
+}
+
+.title{
+        font-size: 56px; 
+        text-align: center;
+        font-weight: bold;
+        margin: 20px;
+}
+
+.main{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        max-width: 1100px;
+        margin:  0 auto;
+        gap:  100px;
+}
+
+.setting{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width:  200px;
+        gap:  20px;
+}
+
+
+input[type=color] {
+        width: 100px;
+        height: 100px; 
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        padding:  0;
+}
+
+input[type=color]::-webkit-color-swatch {
+        border: none;
+        border-radius: 50%;
+        padding: 0;
+}
+
+input[type=color]::-webkit-color-swatch-wrapper {
+        border: none;       
+        border-radius: 50%;
+        padding: 0;
+}
+
+.grid-container{
+        display: grid;
+        /*grid-template-columns: repeat(16, 1fr);*/
+        height:  500px;
+        width: 500px;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 5px;
+}
+
+.btn{
+       border-style: solid;
+       border-width: 1px;
+       border-radius: 5px;
+       /*background-color: white; */
+       width: 100%;
+       text-align: center;
+       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 5px;
+}
+
+.grid-element{
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgba(0,0,0,0.3);
+}
+
+.btn,
+input[type='color'] {
+  transition: transform 0.1s ease-in-out;
+}
+
+.btn:hover,
+input[type='color']:hover {
+  transform: scale(1.05);
+}
+
+input[type='color']:active {
+  transition: transform 0.05s ease-in-out;
+  transform: scale(1);
+}
+
+.btn.active {
+  color: red;
+}
+
+.btn: {
+  color: red;
+}
